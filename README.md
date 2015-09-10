@@ -1,7 +1,7 @@
-# coding=uft-8
+#coding=utf-8
 
 # File usages:
-## [*.py]:
+##   [*.py]:
 ### drive_mario.py:
 	control the car with arduino board.
 ### ultrasound.py:
@@ -10,8 +10,8 @@
 ### test_timer.py:
 	previous version of ultrasound.py
 
-### publisher:
+### publisher.py:
 	Using zmq to publish something.
 
-### subscriber:
+### subscriber.py:
 	Using zmq to receive something.
