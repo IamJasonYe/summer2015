@@ -17,9 +17,8 @@ def perform_command(cmd, inc):
 # 读命令
    # mario_com = sys.stdin.readline()
     mario_com = 'p'
-    print mario_com
     dm.send_command_to_mario(arduino, mario_com)
-    time.sleep(1)
+    time.sleep(0.5)
     mario_resp = dm.read_response_from_mario(arduino)
     print mario_resp
 def timming_exe(cmd, inc = 60):
@@ -32,5 +31,5 @@ if __name__ == '__main__':
 #   tt=time.time()
 #   print('show time after 5 seconds:', tt)
     arduino = dm.open_arduino_port()
-    timming_exe('echo %time%', 2)
+    timming_exe('echo %time%',0.5 )
 
