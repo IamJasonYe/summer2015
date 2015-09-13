@@ -44,9 +44,9 @@ void turn_right()
 
 void go_forward()
 {
-  analogWrite(IN1, 150);   // turn the LED on (HIGH is the voltage level)
+  analogWrite(IN1, 180);   // turn the LED on (HIGH is the voltage level)
   digitalWrite(IN2, LOW);   // turn the LED on (HIGH is the voltage level)
-  analogWrite(IN5, 150);   // turn the LED on (HIGH is the voltage level)
+  analogWrite(IN5, 180);   // turn the LED on (HIGH is the voltage level)
   digitalWrite(IN6, LOW);   // turn the LED on (HIGH is the voltage level)
 }
 
