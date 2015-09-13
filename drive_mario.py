@@ -21,5 +21,5 @@ if __name__ == '__main__':
         print mario_com
         send_command_to_mario(arduino, mario_com)
         time.sleep(1)
-        mario_resp = read_response_from_mario(arduino)
-        print mario_resp
+        #mario_resp = read_response_from_mario(arduino)
+        #print mario_resp
