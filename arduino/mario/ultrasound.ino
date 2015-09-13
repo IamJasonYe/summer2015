@@ -2,11 +2,6 @@
 #ifndef ULTRASOUND
 #define ULTRASOUND
 
-//Fetch the distance using the ultrasound sensor.
-long ultrasound_distance();
-//Calculating the distance based on the duration.
-long microsecondsToCentimeters(long microseconds);
-
 long ultrasound_distance()
 {
 	long duration, cm; 

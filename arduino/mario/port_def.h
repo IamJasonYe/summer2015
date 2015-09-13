@@ -14,7 +14,6 @@ Tiem  ：2015/09/13
 //Servo port
 #define GripperServoPin 4
 
-
 //Ultarsound port
 #define triggerPort A1  //Trigger Pin
 #define echoPort    A2  //Echo Pin
