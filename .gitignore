@@ -1,0 +1,8 @@
+#Executable
+run
+
+#python
+*.py[c]
+
+#Log file
+log.txt
