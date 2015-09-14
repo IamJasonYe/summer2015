@@ -5,4 +5,4 @@ if __name__ == '__main__':
     while True:
         mario_com = 'p'
         dm.send_command_to_mario(arduino, mario_com)
-        time.sleep(0.3)
+        time.sleep(0.1)

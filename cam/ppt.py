@@ -15,6 +15,7 @@ r = 0
 lock = thread.allocate_lock()
 laststring = ''
 gripper='c'
+diff = 10
 def open_arduino_port():
     arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
     arduino.open()
@@ -55,26 +56,26 @@ def detect_diction():
     global laststring
     global gripper
     if(y < 60):
-        if(x < 130 and laststring != 'a'):
+        if(x < 130-diff and laststring != 'a'):
             send_command_to_mario(arduino, 'a')
             laststring = 'a'
             print('turn_left')
-        elif(x > 190 and laststring != 'd'):
+        elif(x > 190-diff and laststring != 'd'):
             send_command_to_mario(arduino, 'd')
             laststring = 'd'
             print('turn_right')
-        elif(130 < x and x < 190 and laststring != 'w'):
+        elif(130-diff < x and x < 190-diff and laststring != 'w'):
             send_command_to_mario(arduino, 'w')
             laststring = 'w'
             print('go_forward')
         else:
             pass
     else:
-        if(x < 130 and laststring != 'v'):
+        if(x < 130-diff and laststring != 'v'):
             send_command_to_mario(arduino, 'v')
             laststring = 'v'
             print('back_right')
-        elif(x > 190 and laststring != 'z'):
+        elif(x > 190-diff and laststring != 'z'):
             send_command_to_mario(arduino, 'z')
             laststring = 'z'
             print('back_left')
@@ -85,7 +86,7 @@ def detect_diction():
             #print('last')
             #gripper='c'
             #time.sleep(5)
-        elif(130 < x and x < 190 and laststring != 'w'):
+        elif(130-diff < x and x < 190-diff and laststring != 'w'):
             send_command_to_mario(arduino, 'w')
             laststring = 'w'
             print('go_forward')
