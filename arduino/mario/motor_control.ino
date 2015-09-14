@@ -4,9 +4,9 @@
 
 void go_left()
 {
-     analogWrite(IN1, 255);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN1, 255);   // turn the LED on (HIGH is the voltage level)
     digitalWrite(IN2, LOW);   // turn the LED on (HIGH is the voltage level)
-     analogWrite(IN5, 80);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN5, 80);   // turn the LED on (HIGH is the voltage level)
     digitalWrite(IN6, LOW);   // turn the LED on (HIGH is the voltage level)
 }
 
@@ -20,9 +20,9 @@ void go_right()
 
 void back_left()
 {
-     analogWrite(IN2, 255);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN2, 255);   // turn the LED on (HIGH is the voltage level)
     digitalWrite(IN1, LOW);   // turn the LED on (HIGH is the voltage level)
-     analogWrite(IN6, 80);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN6, 80);   // turn the LED on (HIGH is the voltage level)
     digitalWrite(IN5, LOW);   // turn the LED on (HIGH is the voltage level)
 }
 
@@ -44,34 +44,34 @@ void turn_right()
 
 void go_forward()
 {
-  analogWrite(IN1, 150);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(IN2, LOW);   // turn the LED on (HIGH is the voltage level)
-  analogWrite(IN5, 150);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(IN6, LOW);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN1, 180);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(IN2, LOW);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN5, 180);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(IN6, LOW);   // turn the LED on (HIGH is the voltage level)
 }
 
 void go_backward()
 {
-  digitalWrite(IN1, LOW);   // turn the LED on (HIGH is the voltage level)
-  analogWrite(IN2, 200);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(IN5, LOW);   // turn the LED on (HIGH is the voltage level)
-  analogWrite(IN6, 200);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(IN1, LOW);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN2, 200);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(IN5, LOW);   // turn the LED on (HIGH is the voltage level)
+    analogWrite(IN6, 200);   // turn the LED on (HIGH is the voltage level)
 }
 
 void stop()
 {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN5, LOW);
-  digitalWrite(IN6, LOW);  
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN5, LOW);
+    digitalWrite(IN6, LOW);  
 }
 
 void turn_around()
 {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN5, LOW);
-  digitalWrite(IN6, HIGH);  
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN5, LOW);
+    digitalWrite(IN6, HIGH);  
 }
 
 #endif MOTOR_CONTROL
