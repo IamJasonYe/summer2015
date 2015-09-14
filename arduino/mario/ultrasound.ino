@@ -22,7 +22,7 @@ long ultrasound_distance()
 
 	//convert the time into a distance
 	cm = microsecondsToCentimeters (duration);
-	Serial.println(cm);
+	//Serial.println(cm);
 	delayMicroseconds(10); // pauses for 10 microseconds  
 	return cm;
 }

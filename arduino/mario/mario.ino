@@ -49,8 +49,8 @@ void work_on_command(int cmd)
 		Serial.print("Distance:");
 	  	long cm; 
 	  	cm = ultrasound_distance();
-	  	Serial.print (cm);
-	  	Serial.print(" cm\n");
+	  	Serial.println (cm);
+	  	//Serial.print(" cm\n");
 	  	Serial.flush();
 	}
 	else if(cmd=='o'){ //open gripper
